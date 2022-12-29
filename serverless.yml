@@ -1,0 +1,17 @@
+service: gpt-whatsapp-app
+
+provider:
+  name: aws
+  ecr:
+    images:
+      gpt-whatsapp:
+        path: ./
+
+functions:
+  app:
+    image:
+      name: gpt-whatsapp
+    timeout: 30
+    events:
+      - http: ANY /
+      - http: 'ANY /{proxy+}'
