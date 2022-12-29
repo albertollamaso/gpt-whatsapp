@@ -22,15 +22,20 @@ Finally copy the endpoint URL of the lambda function and add it as the webhook u
 
 You will need to add these environment variables with the proper values to the lambda function.
 ### Twilio
+
+```
 TW_ACCOUNT_SID
 TW_AUTH_TOKEN
 TW_PHONE_NUMBER='whatsapp:+12055518798'
+```
 
 ### Openai
 
+```
 OPENAI_ORG
 OPENAI_KEY
 OPENAI_MODEL='text-davinci-003'
+```
 
 ## Try-yourself
 
@@ -42,6 +47,9 @@ You can test this application sending a message to this whatsapp number [+120555
 ## Sources
 
 [whatsapp api](https://www.twilio.com/docs/whatsapp/api)
+
 [twilio webhooks](https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks)
+
 [openai docs](https://beta.openai.com/docs/introduction)
+
 [serverless framework](https://www.serverless.com/framework/docs/providers/aws/guide/deploying)
